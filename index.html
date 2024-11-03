@@ -40,13 +40,14 @@
             header {
                 text-align: center;
                 margin: 10px auto;
-                padding: 10px;
+                padding: 0; /* Removido para evitar espaço adicional */
                 color: black;
                 border: solid 1px black;
                 border-radius: 9px;
                 box-shadow: 4px 4px 4px black;
                 width: 80%;
                 height: auto;
+                overflow: hidden; /* Para garantir que a imagem não ultrapasse o header */
             }
             section {
                 text-align: center;
@@ -92,13 +93,14 @@
             header {
                 text-align: center;
                 margin: 10px auto;
-                padding: 10px;
+                padding: 0; /* Removido para evitar espaço adicional */
                 color: black;
                 border: solid 2px black;
                 border-radius: 28px;
                 box-shadow: 4px 4px 4px black;
                 width: 70%;
                 height: auto;
+                overflow: hidden; /* Para garantir que a imagem não ultrapasse o header */
             }
             section {
                 font-size: 14px;
@@ -139,13 +141,14 @@
         @media screen and (min-width: 1025px) {
             header {
                 margin: 10px auto;
-                padding: 10px;
+                padding: 0; /* Removido para evitar espaço adicional */
                 color: black;
                 border: solid 1px black;
                 border-radius: 9px;
                 box-shadow: 4px 4px 4px black;
                 width: 70%;
                 height: auto;
+                overflow: hidden; /* Para garantir que a imagem não ultrapasse o header */
             }
             section {
                 font-size: 20px;
@@ -176,11 +179,18 @@
                 padding: 20px;
             }
         }
+        
+        /* Estilos para a imagem do logo */
+        .logo {
+            width: 100%; /* A imagem preencherá toda a largura do cabeçalho */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove o espaço abaixo da imagem */
+        }
     </style>
 </head>
 <body>
 <header aria-label="LogoMarca">
-    <img src="logomarca.png" alt="Logo Chiara Crochê" style="max-width: 100%; height: auto;">
+    <img src="logomarca.png" alt="Logo Chiara Crochê" class="logo">
 </header>
 <main>
     <section>
@@ -217,5 +227,4 @@
         </a>
     </p>
 </footer>
-</body>
-</html>
+</
