@@ -16,10 +16,8 @@
             margin: 0;
             padding: 0;
         }
-        h1, h2, h3, h4 {
-            text-align: center;
-        }
         h2 {
+            text-align: center;
             font-size: 15px;
         }
         a {
@@ -27,6 +25,9 @@
             color: black;
             border: solid 1px black;
             border-radius: 90px;
+        }
+        h4 {
+            font-size: 20px;
         }
         a:hover {
             color: #555;
@@ -45,11 +46,17 @@
                 border-radius: 9px;
                 box-shadow: 4px 4px 4px black;
                 width: 80%;
+                height: auto;
+                overflow: hidden;
             }
             section {
                 text-align: center;
                 padding: 10px;
                 font-size: 16px;
+            }
+            footer {
+                text-align: center;
+                margin-top: 20px;
             }
             article {
                 background-color: #f5c518;
@@ -61,31 +68,50 @@
                 padding: 10px;
                 box-shadow: 4px 4px 4px black;
             }
-            li {
-                font-size: 15px;
-                padding: 5px;
-                text-align: left;
-            }
         }
-        
         /* Estilos para telas médias (tablets) */
         @media screen and (min-width: 481px) and (max-width: 1024px) {
-            header, article {
+            header {
+                text-align: center;
+                margin: 10px auto;
+                padding: 0;
+                color: black;
+                border: solid 2px black;
+                border-radius: 28px;
+                box-shadow: 4px 4px 4px black;
                 width: 70%;
+                height: auto;
+                overflow: hidden;
             }
             section {
                 font-size: 14px;
                 padding: 15px;
+                margin: 20px;
+            }
+            footer {
+                font-size: 16px;
+                padding: 20px;
+                text-align: center;
             }
             article {
-                padding: 20px;
+                width: 85%;
                 font-size: 23px;
+                padding: 20px;
+                text-align: center;
             }
         }
         /* Estilos para telas grandes (desktops) */
         @media screen and (min-width: 1025px) {
-            header, article {
+            header {
+                margin: 10px auto;
+                padding: 0;
+                color: black;
+                border: solid 1px black;
+                border-radius: 9px;
+                box-shadow: 4px 4px 4px black;
                 width: 70%;
+                height: auto;
+                overflow: hidden;
             }
             section {
                 font-size: 20px;
@@ -96,14 +122,17 @@
                 padding: 20px;
             }
             article {
-                padding: 20px;
                 font-size: 20px;
+                padding: 20px;
+                text-align: center;
             }
         }
+
+        /* Estilos para a imagem do logo */
         .logo {
-            width: 100%;
-            height: auto;
-            display: block;
+            width: 100%; /* A imagem preencherá toda a largura do cabeçalho */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove o espaço abaixo da imagem */
         }
     </style>
 </head>
@@ -128,5 +157,19 @@
             <li>Roupa em Croche</li>
             <li>Bordados</li>
         </ul>
-        <em>Aceitamos encomendas e fazemos entregas em domicílio.</em><br>
-        <em>Acréscimo de taxa de
+        <em>Aceitamos encomendas e fazemos entregas em domicílio.</em>
+        <br>
+        <em>Acréscimo de taxa de entrega: relativo ao local</em>
+    </article>
+</main>
+<footer id="contato">
+    <h4>Contato:</h4>
+    <p>
+        <a href="https://wa.me/5599981290222" target="_blank" rel="noopener noreferrer" style="background-color: green; color: white; padding: 10px; border-radius: 5px; text-decoration: none; margin-bottom: 20px; display: inline-block;" aria-label="Chamar Chiara Crochê no Whatsapp">
+            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Ícone da logo do WhatsApp" style="width: 20px; height:20px; vertical-align:middle;"> Fale com Chiara no whatsapp 
+        </a>
+    </p>
+    <p>
+        <a href="https://www.instagram.com/chiaracroche__" target="_blank" rel="noopener noreferrer" style="background-color: #E4405F; color: white; padding: 10px; border-radius: 5px; text-decoration: none; display: inline-block;" aria-label="Visitar Chiara Crochê no Instagram">
+            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Ícone da logo do Instagram" style="width:20px; height:20px; vertical-align:middle;"> Confira nossas ofertas no instagram
+        </a
