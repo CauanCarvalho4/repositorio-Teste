@@ -91,17 +91,22 @@
         /* Estilos para telas médias (tablets) */
         @media screen and (min-width: 481px) and (max-width: 1024px) {
             header {
-                text-align: center;
-                margin: 10px auto;
-                padding: 0; /* Removido para evitar espaço adicional */
-                color: black;
-                border: solid 2px black;
-                border-radius: 28px;
-                box-shadow: 4px 4px 4px black;
-                width: 70%;
-                height: auto;
-                overflow: hidden; /* Para garantir que a imagem não ultrapasse o header */
-            }
+    text-align: center; /* Centraliza o conteúdo no cabeçalho */
+    margin: 10px auto;
+    padding: 0;
+    color: black;
+    border: solid 1px black;
+    border-radius: 9px;
+    box-shadow: 4px 4px 4px black;
+    width: 70%; /* Ajuste conforme necessário */
+}
+
+.logo {
+    width: 80%; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
             section {
                 font-size: 14px;
                 padding: 15px;
