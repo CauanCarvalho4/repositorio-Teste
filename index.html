@@ -16,8 +16,10 @@
             margin: 0;
             padding: 0;
         }
-        h2 {
+        h1, h2, h3, h4 {
             text-align: center;
+        }
+        h2 {
             font-size: 15px;
         }
         a {
@@ -25,9 +27,6 @@
             color: black;
             border: solid 1px black;
             border-radius: 90px;
-        }
-        h4 {
-            font-size: 20px;
         }
         a:hover {
             color: #555;
@@ -40,26 +39,17 @@
             header {
                 text-align: center;
                 margin: 10px auto;
-                padding: 0; /* Removido para evitar espaço adicional */
+                padding: 0;
                 color: black;
                 border: solid 1px black;
                 border-radius: 9px;
                 box-shadow: 4px 4px 4px black;
                 width: 80%;
-                height: auto;
-                overflow: hidden; /* Para garantir que a imagem não ultrapasse o header */
             }
             section {
                 text-align: center;
                 padding: 10px;
                 font-size: 16px;
-            }
-            section > h2 {
-                font-size: 16px;
-            }
-            footer {
-                text-align: center;
-                margin-top: 20px;
             }
             article {
                 background-color: #f5c518;
@@ -76,84 +66,25 @@
                 padding: 5px;
                 text-align: left;
             }
-            em {
-                font-size: 14px;
-            }
-            h3 {
-                font-size: 20px;
-                margin-left: 8px;
-            }
-            p > a {
-                border: solid 1px black;
-                box-shadow: 2px 2px 2px black;
-            }
         }
         /* Estilos para telas médias (tablets) */
         @media screen and (min-width: 481px) and (max-width: 1024px) {
-            header {
-    text-align: center; /* Centraliza o conteúdo no cabeçalho */
-    margin: 10px auto;
-    padding: 0;
-    color: black;
-    border: solid 1px black;
-    border-radius: 9px;
-    box-shadow: 4px 4px 4px black;
-    width: 70%; /* Ajuste conforme necessário */
-}
-
-.logo {
-    width: 80%; /* Ajuste para o tamanho desejado */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove o espaço abaixo da imagem */
-    margin: 0 auto; /* Centraliza a imagem */
-}
+            header, article {
+                width: 70%;
+            }
             section {
                 font-size: 14px;
                 padding: 15px;
-                margin: 20px;
-            }
-            footer {
-                font-size: 16px;
-                padding: 20px;
-                text-align: center;
             }
             article {
-                width: 85%;
+                padding: 20px;
                 font-size: 23px;
-                padding: 20px;
-                text-align: center;
-            }
-            #produtos {
-                background-color: #f5c518;
-                margin: 10px auto;
-                border: solid 2px black;
-                border-radius: 30px;
-                box-shadow: 4px 4px 4px black;
-                margin: 20px auto;
-                font-size: 20px;
-                padding: 20px 10px 20px 10px;
-                text-align: center;
-            }
-            h1 {
-                text-align: center;  
-            }
-            li {
-                text-align: left;
-                padding: 20px;
             }
         }
         /* Estilos para telas grandes (desktops) */
         @media screen and (min-width: 1025px) {
-            header {
-                margin: 10px auto;
-                padding: 0; /* Removido para evitar espaço adicional */
-                color: black;
-                border: solid 1px black;
-                border-radius: 9px;
-                box-shadow: 4px 4px 4px black;
+            header, article {
                 width: 70%;
-                height: auto;
-                overflow: hidden; /* Para garantir que a imagem não ultrapasse o header */
             }
             section {
                 font-size: 20px;
@@ -164,33 +95,14 @@
                 padding: 20px;
             }
             article {
-                font-size: 20px;
                 padding: 20px;
-                text-align: center;
-            }
-            #produtos {
-                background-color: #f5c518;
-                margin: 10px auto;
-                border: solid 2px black;
-                border-radius: 30px;
-                box-shadow: 4px 4px 4px black;
-                margin: 20px auto;
                 font-size: 20px;
-                padding: 20px 10px 20px 10px;
-                text-align: center;
-            }
-            li {
-                text-align: left;
-                padding: 20px;
             }
         }
-        
-        /* Estilos para a imagem do logo */
         .logo {
-            width: 60%; /* A imagem preencherá toda a largura do cabeçalho */
-            height: auto; /* Mantém a proporção da imagem */
-            display: block; /* Remove o espaço abaixo da imagem */
-            margin: 0;
+            width: 100%;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
@@ -215,22 +127,5 @@
             <li>Roupa em Croche</li>
             <li>Bordados</li>
         </ul>
-        <em>Aceitamos encomendas e fazemos entregas em domicílio.</em>
-        <br>
-        <em>Acréscimo de taxa de entrega: relativo ao local</em>
-    </article>
-</main>
-<footer id="contato">
-    <h4>Contato:</h4>
-    <p>
-        <a href="https://wa.me/5599981290222" target="_blank" rel="noopener noreferrer" style="background-color: green; color: white; padding: 10px; border-radius: 5px; text-decoration: none; margin-bottom: 20px; display: inline-block;" aria-label="Chamar Chiara Crochê no Whatsapp">
-            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Ícone da logo do WhatsApp" style="width: 20px; height:20px; vertical-align:middle;"> Fale com Chiara no whatsapp 
-        </a>
-    </p>
-    <p>
-        <a href="https://www.instagram.com/chiaracroche__" target="_blank" rel="noopener noreferrer" style="background-color: #E4405F; color: white; padding: 10px; border-radius: 5px; text-decoration: none; display: inline-block;" aria-label="Visitar Chiara Crochê no Instagram">
-            <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Ícone da logo do Instagram" style="width:20px; height:20px; vertical-align:middle;"> Confira nossas ofertas no instagram
-        </a>
-    </p>
-</footer>
-</
+        <em>Aceitamos encomendas e fazemos entregas em domicílio.</em><br>
+        <em>Acréscimo de taxa de
